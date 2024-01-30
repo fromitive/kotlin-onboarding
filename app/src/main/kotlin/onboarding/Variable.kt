@@ -1,6 +1,6 @@
 fun main(){
-    var name = "Moosong"
-    var birth = 1994
+    val name = "Moosong"
+    val birth = 1994
     // birth = 1993 //var은 안바꾸는게 원칙이라 경고 오류가 나타남. 값은 변경될 수 있음.
     println("My Name is " + name)
     println("Year of Birth is " + birth)
@@ -11,6 +11,8 @@ fun main(){
     val myLetter    = 'D'           // Char
     val myBoolean   = true          // Boolean
     val myText      = "Hello"       // String
+    
+
 
     // 타입 정의는 변수명:<Type>으로 정의 할 수 있음
     // 기본 타입은 대문자로 시작하는 것으로 추정
@@ -41,6 +43,12 @@ fun main(){
 
     // val myName
     // myName = "Moosong" // val을 사용하면 꼭 초기화해야 함
+
+    // val 과 var
+    // myNum = 5 : val은 변경할 수 없음
+    var variableName:String
+    variableName = "lee"
+    println(variableName) // var은 변경 가능하고 초기화 할 수 있음
 
     // 문자열 자료형
     println(myText2[0])           // idx로 조회 가능
