@@ -4,6 +4,9 @@ fun main() {
     trickOrTreat(false, {"$it is five"})
     val treatFunction = trickOrTreat(false) {"$it"} // it is (Int) paramater
     treatFunction()
+    setComponent {
+        treat
+    }
 }
 // functionName(parameter): [return value]
 // return value -> labmda expression : () -> [return value]
@@ -50,4 +53,14 @@ val trick = {
 
 val treat = {
     println("Have a treat!")
+}
+
+
+fun defaultInt(value: Int = 5): String {
+    return "${value}"
+}
+
+fun setComponent(defaultValue:Int = 5, execute:() -> Unit) {
+    println("default value is : ${defaultValue}")
+    execute()
 }
