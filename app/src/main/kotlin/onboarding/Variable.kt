@@ -60,5 +60,10 @@ fun main(){
     var age:Int = 30
     println("My Age is : $age")   // formating 가능
 
-
+    // array
+    val array = arrayOf("item1","item2", "item3", "item4",5)
+    if ("item1" in array) {
+        println("item1 in array is true")
+    }
+    println("Array size is ${array.size}")
 }
